@@ -102,32 +102,6 @@
         };
 
   
-        function InitGame(photoSize, scopes, gameReadyApi) {
-            console.log('Init GAME');
-            initGame = true;
-            photoSizeForInit = photoSize;
-            scopesForInit = scopes;
-
-            if (initSDK == true) {
-                if (gameReadyApi == true)
-                    GameReadyAPI();
-                InitPlayer(photoSize, scopes);
-            }
-            else {
-                InitYandex();
-                setTimeout(function () {
-                    if (!initSDK) {
-                        console.error('CRASH InitYandex');
-                        NotAuthorized();
-                    }
-                }, 1000);
-            }
-
-            if (nowFullAdOpen == true) {
-                myGameInstance.SendMessage('YandexGame', 'OpenFullAd');
-            }
-        }
-
         function GameReadyAPI() {
             if (letGameReadyApi) {
                 ysdk.features.LoadingAPI?.ready();
