@@ -10,7 +10,7 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
     <title>Cyber Cars Punk Racing </title>
-    <link rel="icon" type="image/x-icon" href="https://cdn.jsdelivr.net/gh/google-com-classroom/draw@main/TemplateData/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="TemplateData/favicon.ico">
         
     <style>
         html,
@@ -242,54 +242,7 @@
         window.addEventListener('resize', onResize);
     
     </script>
-        
-    <script src="/sdk.js"></script>
-    <script type="text/javascript">
-      var player;
-      var sdk;
-      var payments = null;
-      let myGameInstance = null;
-      YaGames.init({
-        
-        
-        
-        })
-        .then(ysdk => { 
-            window.ysdk = ysdk
-            sdk=ysdk;
-            ysdk.adv.showFullscreenAdv({callbacks:{}});
-      });
 
-
-      function auth(){
-    
-      }
-
-      function initPlayer(){
-  
-      }
-
-      function getUserData(){
-      
-      }
-
- 
-
-      function initPayments(){
-     
-      }
-
-      function buy(id){
-     
-      }
-   
-
-
-      
-      
-    
-    </script>   
-    
    
 </body>
 
